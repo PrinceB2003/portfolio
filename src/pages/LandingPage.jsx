@@ -1,5 +1,5 @@
 import LargeCard from "../components/LargeCard";
-import { CircleUser } from 'lucide-react';
+import { Copyright } from 'lucide-react';
 import { Button } from "flowbite-react";
 import { motion } from "motion/react"
 import AutoCarousel from "../components/AutoCarousel";
@@ -39,14 +39,14 @@ function LandingPage() {
 
                                 <div> 
                                     <a href="https://www.linkedin.com/in/prince-barua/" target="_blank"> 
-                                        <img className="h-[2.5rem] w-[2.5rem]"src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
+                                        <img className="h-[2.5rem] w-[2.5rem]  hover:scale-125"src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
                                     </a>
                                 </div>
 
 
                                 <div> 
                                     <a href="https://github.com/PrinceB2003" target="_blank">                                                                                
-                                        <img className="h-[2.5rem] w-[2.5rem] brightness-[50]" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"/>
+                                        <img className="h-[2.5rem] w-[2.5rem]  hover:scale-125 brightness-[50]" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"/>
                                     </a>
                                 </div>
 
@@ -56,11 +56,6 @@ function LandingPage() {
                         
 
                         <div id="img-wrapper" className=" rounded-full flex justify-center items-center" > 
-                            <div> 
-                        
-                                {/* <img className=" h-[450px] w-[450px] rounded-full flex justify-center items-center" > 
-                            <div>  h-[400px] w-[400px] rounded-full" src="/src/assets/profile-500x500.png"></img> */}
-                            </div>
 
                             <div className="flex flex-col "> 
                                     <div className="w-[50%]"> 
@@ -86,7 +81,6 @@ function LandingPage() {
 
                         <div className="flex justify-center gap-8">
                             <div> 
-                                {/* <CircleUser  size={256} color={"#FFFFFF"}/>  */}
                                 <img className="h-[20rem] w-[18rem]" src="/src/assets/pb.jpeg"></img>
                             </div>
                             <LargeCard> 
@@ -155,26 +149,61 @@ function LandingPage() {
                 <section id="experience" className="bg-[#02010a] pt-16 pb-16 min-h-screen w-[100%]">
                     <div className="mb-8 " > 
                         <h1 className="font-Heading font-bold text-5xl text-[#f3eff5] text-center"> My Experience</h1>
-                        <div id="exp-1-container" className=" "> 
-                            <div> 
-                                <h2 className="font-SubHeading text-[#f3eff5]">Technology Intern at theHipe </h2>
-                            </div> 
-                            <div> 
-                                <p className="font-Text text-[#f3eff5]">July 2025 - December 2025</p>
-                            </div> 
-                            <div> 
-                                <h2 className="font-SubHeading text-[#f3eff5]"> What I worked on:</h2>
-                            </div> 
-                            <div> 
-                                <p> </p>
+                    </div>    
+                        <div id="exp-1-container" className="flex justify-center items-center gap-8 "> 
+                            <div id="exp1-info" className="w-[50%] max-w-[75%] border-[#192BC2] border-solid border-2 rounded-xl p-4"> 
+                                <div className="mb-2"> 
+                                    <h2 className="font-SubHeading font-bold text-3xl text-[#f3eff5]">Technology Intern at theHipe </h2>
+                                </div> 
+                                <div className="mb-2"> 
+                                    <p className="font-Text font-semibold text-xl text-[#f3eff5]">July 2025 - December 2025</p>
+                                </div> 
+                                <div className="mb-2"> 
+                                    <h2 className="font-SubHeading font-bold text-xl text-[#f3eff5]"> What I worked on:</h2>
+                                </div> 
+                                <div className="mb-2"> 
+                                    
+                                    <p className="font-Text text-[#f3eff5]">HIPE-Cyber is a comprehensive community platform designed exclusively for CUNY students to engage with cybersecurity through discussion forums, real-time security news and events, networking opportunities, and collaborative learning resources that foster both academic growth and professional development in the field. </p>
+                                </div>
+                                <div> 
+                                    <ul className=""> 
+                                        <li> 
+                                            <p className="font-Text text-[#f3eff5]"> Building a cybersecurity-focused community platform for 200,000+ CUNY students using React and Tailwind CSS,
+                                                 troubleshooting development issues and ensuring platform functionality. 
+                                            </p>  
+                                        </li>
+
+                                        <li>  
+                                            <p className="font-Text text-[#f3eff5]">
+                                                Gathered feedback from other interns to identify user experience issues and updated platform features based on their input and testing.
+                                            </p>    
+                                        </li> 
+
+                                        <li>  
+                                            <p className="font-Text text-[#f3eff5]"> 
+                                                Designing and refining the user interface, focusing on accessibility and usability for a diverse student audience while 
+                                                troubleshooting visual inconsistencies and interface issues to ensure optimal user experience.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div> 
-                                <ul> 
-                                    <li></li>
-                                </ul>
+
+                            <div id="exp1-link" className="flex flex-col justify-center items-center gap-8"> 
+                                <div id="link-img" className="mb-2"> 
+                                    <a href="https://hipe-cyber.vercel.app/" target="_blank"> 
+                                        <img src="/src/assets/h-c-gif.gif" className="h-[10rem] w-[20rem] ease-in-out hover:animate-bounce"></img>
+                                    </a>
+                                </div>
+                                <div id="link" className="mb-2"> 
+                                    <a href="https://hipe-cyber.vercel.app/" target="_blank" className="font-Text text-[#f3eff5] bg-[#0066FF] p-2 rounded-lg hover:bg-[#1e40af]"> 
+                                        Vist Hipe-Cyber 
+                                    </a>
+                                </div>
                             </div>
+
                         </div>
-                    </div> 
+                     
                 </section> 
 
                 <section id="projects" className="bg-[#02010a] pt-16 pb-16 min-h-screen w-[100%]"> 
@@ -182,17 +211,31 @@ function LandingPage() {
                         <h1 className="font-Heading font-bold text-5xl text-[#f3eff5] text-center"> My Projects</h1>    
                     </div> 
 
-                    <div id="project-container"> 
+                    <div id="project-container" className="flex gap-4 justify-center items-center "> 
                         <div id="project-1"> 
-
+                            <div> 
+                                <h2 className="text-[#f3eff5]">Quiz App</h2>
+                            </div>
                         </div> 
 
                         <div id="project-2"> 
+                            <div> 
+                               <h2 className="text-[#f3eff5]">Cybersecurity Home Lab</h2> 
+                            </div>
 
+                            <div> 
+                                <p> </p>
+                            </div> 
+
+                            <div> 
+                                <a> </a>
+                            </div>
                         </div>
 
                         <div id="project-3">
-
+                            <div> 
+                                <h2></h2>
+                            </div>
                         </div>
                     </div>
                     
@@ -204,7 +247,11 @@ function LandingPage() {
                 </section>
 
                 <footer  className="bg-[#02010a]  pt-8 pb-16"> 
-                    <h1 className="font-Header font-bold text-5xl text-[#f3eff5] text-center">Prince Barua</h1>
+                    <div className="flex gap-2 justify-center items-center"> 
+                        <Copyright size={32} color={"#f3eff5"}/> 
+                        <h1 className="font-Header font-bold text-5xl text-[#f3eff5] text-center">Prince Barua</h1>
+                    </div>
+                    
                 </footer>
 
 

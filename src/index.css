@@ -23,3 +23,6 @@
     --font-Text:"Space Mono",san-serif;
 }
 
+class*=carousel{ 
+    overflow:hidden !important;
+}
