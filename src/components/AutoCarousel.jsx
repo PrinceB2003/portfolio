@@ -4,8 +4,8 @@ function AutoCarousel () {
     
     return ( 
             <div className="relative"> 
-            <div className=" h-56 sm:h-64 xl:h-80 2xl:h-96 overflow-hidden" > 
-                <Carousel indicators={false} slideInterval={1000}>
+            <div className=" h-56 sm:h-64 xl:h-80 2xl:h-96" > 
+                <Carousel id="my-carousel" indicators={false} slideInterval={1000}>
         
                         <img className="h-[15rem] w-[15rem] relative" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"  key={0} />
 

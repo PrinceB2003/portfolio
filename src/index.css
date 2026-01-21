@@ -23,6 +23,12 @@
     --font-Text:"Space Mono",san-serif;
 }
 
-class*=carousel{ 
-    overflow:hidden !important;
+
+body { 
+     background-color:#02010a;
 }
+
+#my-carousel > div { 
+    overflow-x: hidden !important;
+}
+

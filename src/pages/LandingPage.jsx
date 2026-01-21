@@ -21,6 +21,13 @@ function LandingPage() {
                     </div>
                 </header>
 
+            <motion.div 
+                        initial={{opacity:0}}
+                        animate={{opacity:1}}
+                        exit={{opacity:0}} 
+                        transition={{duration: 3.0}}
+
+            > 
                 <section id="hero" className="bg-[#02010a] pt-16 pb-16 min-h-[90vh] w-[100%]"> 
                     <div id="hero-content-container" className="flex justify-center items-center gap-16"> 
                         <div className="w-[35rem]">
@@ -70,8 +77,15 @@ function LandingPage() {
                         
                     </div>   
                 </section>
-                
-            <motion.div> 
+             </motion.div> 
+
+            <motion.div 
+                initial={{opacity:0}}
+                whileInView={{opacity:1}} 
+                exit={{opacity:0}}
+                viewport={{margin:"-200px"}}
+                transition={{duration:1.0}}
+            > 
                 <section id="about" className="bg-[#02010a] pt-16 pb-16 min-h-[90vh] w-[100%]"> 
                     <div id="about-wrapper">
                 
@@ -97,6 +111,13 @@ function LandingPage() {
                 </section> 
         </motion.div>
 
+            <motion.div 
+                initial={{opacity:0}}
+                whileInView={{opacity:1}} 
+                exit={{opacity:0}}
+                viewport={{margin:"-200px"}}
+                transition={{duration:1.0}}
+            > 
                 <section id="education" className="bg-[#02010a] min-h-[90vh] w-[100%]"> 
                     <div id="education" className="flex flex-col justify-center items-center gap-8"> 
                             <div> 
@@ -133,6 +154,7 @@ function LandingPage() {
 
                         </div>
                 </section>
+        </motion.div>
 
                 <section id="skills" className="bg-[#02010a] pt-16 pb-16 overflow-hidden "> 
                     <div className="mb-8"> 
@@ -146,12 +168,19 @@ function LandingPage() {
 
                 </section>
 
+            <motion.div 
+                initial={{opacity:0}}
+                whileInView={{opacity:1}} 
+                exit={{opacity:0}}
+                viewport={{margin:"-200px"}}
+                transition={{duration:1.0}}
+            >    
                 <section id="experience" className="bg-[#02010a] pt-16 pb-16 min-h-screen w-[100%]">
                     <div className="mb-8 " > 
                         <h1 className="font-Heading font-bold text-5xl text-[#f3eff5] text-center"> My Experience</h1>
                     </div>    
-                        <div id="exp-1-container" className="flex justify-center items-center gap-8 "> 
-                            <div id="exp1-info" className="w-[50%] max-w-[75%] border-[#192BC2] border-solid border-2 rounded-xl p-4"> 
+                        <div id="exp-1-container" className="flex justify-center items-center gap-8  "> 
+                            <div id="exp1-info" className="w-[50%] max-w-[75%] bg-linear-to-b from-[#192BC2] to-[#0e0e52] rounded-xl p-4"> 
                                 <div className="mb-2"> 
                                     <h2 className="font-SubHeading font-bold text-3xl text-[#f3eff5]">Technology Intern at theHipe </h2>
                                 </div> 
@@ -205,31 +234,56 @@ function LandingPage() {
                         </div>
                      
                 </section> 
-
+            </motion.div>
                 <section id="projects" className="bg-[#02010a] pt-16 pb-16 min-h-screen w-[100%]"> 
                     <div className="mb-8"> 
                         <h1 className="font-Heading font-bold text-5xl text-[#f3eff5] text-center"> My Projects</h1>    
                     </div> 
 
                     <div id="project-container" className="flex gap-4 justify-center items-center "> 
-                        <div id="project-1"> 
-                            <div> 
-                                <h2 className="text-[#f3eff5]">Quiz App</h2>
+                        <div id="project-1" className="w-[25rem] flex flex-col gap-2 justify-center items-center"> 
+                            
+                            <div className=""> 
+                                <img src="/src/assets/quiz-app.png"></img>
                             </div>
+                            
+                            <div className="text-center font-SubHeading"> 
+                                <h2 className="text-[#f3eff5] text-3xl">Quiz App</h2>
+                            </div>
+
+
+                            <div className="text-center font-Text bg-linear-to-b from-[#192BC2] to-[#0e0e52] rounded-xl p-2"> 
+                                <p className="text-[#f3eff5]">Led front-end development for a quiz application, designing responsive interfaces and implementing logic to dynamically display randomized questions from a 500+ entry database.  
+                                    Collaborated with a backend developer to integrate server-side functionality and ensure seamless user experience. 
+                                </p>
+                            </div>
+                            
+                            {/* <div className="mt-4 mb-4 ">
+                                <a href="https://maysoonprincequizapp.netlify.app/login" target="_blank" className="font-Text text-[#f3eff5] bg-[#0066FF] p-2 rounded-lg hover:bg-[#1e40af]"> 
+                                    View Project
+                                </a>
+                            </div> */}
                         </div> 
 
-                        <div id="project-2"> 
-                            <div> 
-                               <h2 className="text-[#f3eff5]">Cybersecurity Home Lab</h2> 
+                        <div id="project-2" className="w-[25rem] flex flex-col gap-2 justify-center items-center"> 
+                            
+                            <div className="h-[15rem] w-[15rem]"> 
+                                <img src="/src/assets/cybersec-homelab.png"></img>
                             </div>
 
-                            <div> 
-                                <p> </p>
+                            <div className="text-center font-SubHeading">  
+                               <h2 className="text-[#f3eff5] text-2xl">Cybersecurity Home Lab</h2> 
+                            </div>
+
+                            <div className="text-center font-Text bg-linear-to-b from-[#192BC2] to-[#0e0e52] rounded-xl p-2"> 
+                                <p className="text-[#f3eff5]"> Designed and configured a cybersecurity home lab using VirtualBox with Windows and Kali Linux to simulate real-world security scenarios.  
+                                    Deployed and analyzed malware in controlled environments using Splunk for system telemetry monitoring and anomaly detection. 
+                                </p>
                             </div> 
 
-                            <div> 
-                                <a> </a>
-                            </div>
+                            {/* <div className="mt-4 mb-4"> 
+
+                            </div> */}
                         </div>
 
                         <div id="project-3">
