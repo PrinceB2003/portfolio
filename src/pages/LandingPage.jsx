@@ -258,11 +258,11 @@ function LandingPage() {
                                 </p>
                             </div>
                             
-                            {/* <div className="mt-4 mb-4 ">
+                            <div className="mt-4 mb-4 ">
                                 <a href="https://maysoonprincequizapp.netlify.app/login" target="_blank" className="font-Text text-[#f3eff5] bg-[#0066FF] p-2 rounded-lg hover:bg-[#1e40af]"> 
                                     View Project
                                 </a>
-                            </div> */}
+                            </div>
                         </div> 
 
                         <div id="project-2" className="w-[25rem] flex flex-col gap-2 justify-center items-center"> 
@@ -281,14 +281,26 @@ function LandingPage() {
                                 </p>
                             </div> 
 
-                            {/* <div className="mt-4 mb-4"> 
-
-                            </div> */}
                         </div>
 
-                        <div id="project-3">
-                            <div> 
-                                <h2></h2>
+                        <div id="project-3" className="w-[25rem] flex flex-col gap-2 justify-center items-center">
+                            <div className="text-center font-SubHeading"> 
+                                <h2 className="text-[#f3eff5] text-2xl">IT Home Lab - Active Directory</h2>
+                            </div>
+                            <div className="text-center font-Text bg-linear-to-b from-[#192BC2] to-[#0e0e52] rounded-xl p-2">
+                                <div className="text-center font-SubHeading"> 
+                                    <p className="text-[#f3eff5]">Deployed and configured an IT Home lab utilizing active directory in a windows environment</p>
+                                </div> 
+                                <div className="text-center font-SubHeading"> 
+                                    <p className="text-[#f3eff5]">Performed actions such as</p>    
+                                </div>
+                                <div> 
+                                    <ul> 
+                                        <li className="text-[#f3eff5]"> Adding new users to a domain </li>
+                                        <li className="text-[#f3eff5]"> </li>
+                                        <li className="text-[#f3eff5]"> </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -296,7 +308,38 @@ function LandingPage() {
 
                 </section> 
 
-                <section id="contact"> 
+                <section id="contact" className="  pt-16 pb-16 min-h-screen flex justify-center items-center"> 
+                    <div id="form-container" className="bg-[#02010a] h-full w-full max-w-[50rem]">
+                    
+                        <form name="contact-me" method="POST" data-netlify="true" className="min-h-[18rem] font-Text bg-linear-to-b from-[#192BC2] to-[#0e0e52] rounded-xl p-2 flex flex-col"> 
+                            <div id="form-content"> 
+                                <div> 
+                                    <h1 className="font-Heading font-bold text-5xl text-[#f3eff5] text-center">Contact Me</h1>
+                                </div> 
+
+                                <div className="pt-2 pb-2"> 
+                                    <label for="name" className="text-[#f3eff5] font-SubHeading text-2xl"> Name: </label> 
+                                    <input type = "text" className="text-[#f3eff5] border-white/30 font-text text-xl w-full pt-2 pb-2 pl-4 pr-4" id="contact-name" placeholder="Enter your name."></input>   
+                                </div>
+                                <div className="pt-2 pb-2"> 
+                                    <label for="email" className="text-[#f3eff5] font-SubHeading text-2xl">Email:</label> 
+                                    <input type = "text" className="text-[#f3eff5] font-text text-xl w-full pt-2 pb-2 pl-4 pr-4" id="contact-email" placeholder="Enter your email address."></input>   
+                                </div>
+                                <div className="pt-2 pb-2"> 
+                                    <label for ="message" className="text-[#f3eff5] font-SubHeading text-2xl">Message:</label>
+                                    <input type = "text " className="text-[#f3eff5] font-text text-xl w-full pt-2 pb-2 pl-4 pr-4" id="contact-message" placeholder="Enter your message."></input>    
+                                </div>
+                                <div className="flex justify-end pt-2 pb-2"> 
+                                    <button  
+                                             className="bg-[#f3eff5] rounded-xl h-fit w-fit px-4 py-2"
+                                            type="submit"> 
+                                                Send 
+                                    </button>    
+                                </div>       
+                            </div>
+                            
+                        </form>
+                    </div>
 
                 </section>
 
